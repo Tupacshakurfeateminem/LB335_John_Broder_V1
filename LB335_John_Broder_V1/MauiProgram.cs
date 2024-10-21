@@ -19,6 +19,8 @@ namespace LB335_John_Broder_V1
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
 
+            builder.Services.AddTransient<DetailPage>();
+            builder.Services.AddTransient<DetailViewModel>();
             return builder.Build();
         }
     }
